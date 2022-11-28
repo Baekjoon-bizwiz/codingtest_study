@@ -1,6 +1,6 @@
 const fs = require('fs');
-let input = fs.readFileSync('./HyeJu1301/input.txt').toString().split(' ');
-// let input = fs.readFileSync('/dev/stdin').toString().split(' ');
+let input = fs.readFileSync('./HyeJu1301/input.txt').toString().trim().split(' ');
+// let input = fs.readFileSync('/dev/stdin').toString().trim().split(' ');
 
 let str = ""
 
