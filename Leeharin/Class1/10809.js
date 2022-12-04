@@ -11,13 +11,14 @@ for (let i = 97; i <= 122; i++) {
   arr.push(String.fromCharCode(i));
 }
 
-arr.forEach((item) => {
+arr.forEach((item, iddx) => {
+  result.push(-1);
   _input.forEach((char, idx) => {
     let add = _input.indexOf(char) === idx;
-    if (char === item && add) return result.push(idx);
-    return;
+    if (char === item && add) {
+      result[iddx] = idx;
+    }
   });
-  result.push(-1);
 });
 
 console.log(result.join(' '));
